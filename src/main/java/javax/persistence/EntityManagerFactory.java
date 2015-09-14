@@ -9,6 +9,7 @@
  */
 package javax.persistence;
 
+import javax.persistence.async.AsyncEntityManager;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.metamodel.Metamodel;
 import java.util.Map;
@@ -37,6 +38,13 @@ public interface EntityManagerFactory {
      * @throws IllegalStateException if the entity manager factory has been closed
      */
     public EntityManager createEntityManager();
+
+    /**
+     * Create a new asynchronous <code>EntityManager</code>.
+     *
+     * @return
+     */
+    public AsyncEntityManager createAsyncEntityManager();
 
     /**
      * Create a new application-managed <code>EntityManager</code> with the
