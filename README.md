@@ -1,5 +1,5 @@
-hibernate-jpa-api
-=================
+hibernate-jpa-api-async
+=======================
 
 Proposal for an asynchronous extension to the JPA 2.1 API, which allows asynchronous, non-blocking database access via JPA.
 
@@ -11,7 +11,7 @@ The main additions include:
 This extended JPA 2.1 API is used in the prototype for adding asynchronous database access to Hibernate ORM: https://github.com/jakobk/hibernate-orm-async
 
 
-#Original README from hibernate-jpa
+#Original README from hibernate-jpa-api
 
 Clean-room definition of JPA APIs intended for transitory use in Hibernate JPA development.
 
