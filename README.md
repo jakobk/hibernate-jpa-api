@@ -1,6 +1,18 @@
 hibernate-jpa-api
 =================
 
+Proposal for an asynchronous extension to the JPA 2.1 API, which allows asynchronous, non-blocking database access via JPA.
+
+The main additions include:
+* Method createAsyncEntityManager() in EntityManagerFactory
+* javax.persistence.async.AsyncEntityManager
+* javax.persistence.async.AsyncQuery
+
+This extended JPA 2.1 API is used in the prototype for adding asynchronous database access to Hibernate ORM: https://github.com/jakobk/hibernate-orm-async
+
+
+#Original README from hibernate-jpa
+
 Clean-room definition of JPA APIs intended for transitory use in Hibernate JPA development.
 
 See http://java.net/projects/jpa-spec/downloads for drafts used.
